@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NighPlan</title>
+    <!-- meta viewport -->
+     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+     <!-- nuestros estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- css boostrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <!-- normalizador de diseño de los navegadores -->
+    <link rel="stylesheet" href="css/normalize.css">
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+
+    <script src="js/jquery-2.2.1.min.js"></script>
+    <script src="js/scrollspy.js"></script>
+    <script src="js/efectos.js"></script>
+    <script src="js/funciones.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    
+    
+</head>
+<body>
+    <nav id="mainNav" class="navbar navbar-custom navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll selected" href="#sobre-mi">NightPlan! </a>
+                <a class="navbar-brand page-scroll selected logo" href="#sobre-mi"><img src="./img/logo4.jpg" alt="logo"></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul id="nav" class="nav navbar-nav navbar-right ">
+                    <li>
+                        <a href="#establecimientos">Establecimientos</a>
+                    </li>
+                    <li>
+                        <a href="#usuarios">Usuarios</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header id="sobre-mi">
+      
+       
+               
+        
+    </header>
+
+    <section id="establecimientos">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-12 col-lg-12 text-center">
+                    <h2 class="titulo-establecimientos">Crear establecimientos</h2>
+                </div>
+            </div>
+            <div>
+                <h4 class="subTitulo-establecimientos">Para crear su establecimiento por favor complete el siguiente fomulario:</h4>
+            </div>
+             <div>
+                <form>
+                    <div>
+                    <div class="form-group separacionInput">
+                        <label for="exampleFormControlInput1">Nombre</label>
+                        <input type="email" class="form-control" id="inputName" placeholder=" El bar de Pepe..">
+                      </div>                    
+                    <div class="form-group separacionInput">
+                        <label for="exampleFormControlInput1">Dirección</label>
+                        <input type="email" class="form-control" id="inputAdress" placeholder="Av.Cordoba">
+                      </div>
+                        <div class="form-group separacionInput">
+                        <label for="exampleFormControlInput1">Barrio</label>
+                        <input type="email" class="form-control" id="inputBarrio" placeholder="San Cristobal">
+                      </div>
+                         <div class="form-group separacionInput">
+                            <label for="exampleFormControlSelect2">Seleccione el tipo de comida:</label>
+                            <select multiple class="form-control"  id="multiSelectTipoComida">
+                                <option id="opcion1TipoComida">Pizzeria</option>
+                                <option id="opcion2TipoComida">Comida oriental (Sushi)</option>
+                                <option id="opcion3TipoComida">Parrilla</option>
+                                <option id="opcion4TipoComida">Comida Mexicana</option>
+                                <option id="opcion5TipoComida">Comida Peruana</option>
+                                <option id="opcion6TipoComida">Pastas</option>
+                                <option id="opcion7TipoComida">Hamburguesería</option>
+                        </select>
+                        </div>
+                        <div class="form-group separacionInput">
+                            <label for="exampleFormControlSelect2">Caracteristicas del establecimiento:</label>
+                            <select multiple class="form-control"  id="multiSelectCaracteristicas">
+                                <option id="opcion1Caracteristicas">Barra de tragos</option>
+                                <option id="opcion2Caracteristicas">Happy Hour</option>
+                                <option id="opcion3Caracteristicas">Pista de bailes</option>
+                                <option id="opcion4Caracteristicas">Terraza</option>
+                                <option id="opcion5Caracteristicas">Pantalla gigante</option>
+                                <option id="opcion6Caracteristicas">Aire acondicionado</option>
+                                <option id="opcion7Caracteristicas">WIFI</option>
+                                <option id="opcion8Caracteristicas">Sector fumadores</option>
+                                <option id="opcion9Caracteristicas">Mesas al aire libre</option>
+                        </select>
+                        </div>
+                         <div class="form-check separacionInput">
+                            <label class="form-check-label" for="gridCheck1">¿Su establecimiento es destacado?</label>
+                            <input class="form-check-input" type="checkbox" id="checkedProminent">
+                        </div>
+                     <div class="btnSubmit separacionInput">
+                        <br></br><button type="button" class="btn btn-primary btn-lg btn-block" id="btnGuardar">Crear establecimiento</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <section id="usuarios" class="seccionUsuario ">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-12 col-lg-12 ">
+                    <h2 class="titulo-usuarios">Lista de usuarios</h2>
+                </div>
+                 
+            </div>
+            <h3 class="subTitulo-usuarios">Lista de usuarios activos</h3>
+            <div class="btnSubmit separacionInput">
+                <br></br><button type="button" class="btn btn-primary btn-lg btn-block" id="btnListar">Listar usuarios</button>
+            </div>
+            <table class="table  table-responsive tablaUsuarios  table table-striped table table-bordered  ">
+              <thead class="thead-dark">
+                <tr id="fila0">
+                  <th scope="col" class="text-center">id</th>
+                  <th scope="col" class="text-center">Nombre</th>
+                  <th scope="col" class="text-center">Apellido</th>
+                  <th scope="col" class="text-center">Email</th>
+                  <th scope="col" class="text-center">Contraseña</th>
+                  <th scope="col" class="text-center">Fecha de Nacimiento</th>
+                  <th scope="col" class="text-center"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr id="fila1">
+                  <th><input type="text" id="id1" disabled></th>
+                  <td id="cl-nombre"><input type="text" id="nombre1" disabled></td>
+                  <td><input type="text" id="apellido1" disabled></td>
+                  <td><input type="text" id="email1" disabled></td>
+                  <td><input type="text" id="contraseña1" disabled></td>
+                  <td><input type="text" id="fechaNac1" disabled></td>
+                  <td> <button id="btnborrar1" type="button" class="btn btn-default"><span class="glyphicon glyphicon-trash"></span></button>  </td>
+                </tr>
+                 <tr id="fila2">
+                  <th><input type="text" id="id2" disabled></th>
+                  <td id="cl-nombre"><input type="text" id="nombre2" disabled></td>
+                  <td><input type="text" id="apellido2" disabled></td>
+                  <td><input type="text" id="email2" disabled></td>
+                  <td><input type="text" id="contraseña2" disabled></td>
+                  <td><input type="text" id="fechaNac2" disabled></td>
+                  <td> <button id="btnborrar2" type="button" class="btn btn-default"><span class="glyphicon glyphicon-trash"></span></button>  </td>
+                </tr>
+                  <tr id="fila3">
+                  <th><input type="text" id="id3" disabled></th>
+                  <td id="cl-nombre"><input type="text" id="nombre3" disabled></td>
+                  <td><input type="text" id="apellido3" disabled></td>
+                  <td><input type="text" id="email3" disabled></td>
+                  <td><input type="text" id="contraseña3" disabled></td>
+                  <td><input type="text" id="fechaNac3" disabled></td>
+                  <td> <button id="btnborrar3" type="button" class="btn btn-default"><span class="glyphicon glyphicon-trash"></span></button>  </td>
+                </tr>
+              </tbody>
+            </table>
+        </div>	
+    </section>
+    
+</body>
+</html>
+
+
+
